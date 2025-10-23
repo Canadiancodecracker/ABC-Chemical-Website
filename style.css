@@ -1,0 +1,3 @@
+
+/* Minor tweaks not covered by Tailwind utilities */
+section[id]{scroll-margin-top:5rem;}
