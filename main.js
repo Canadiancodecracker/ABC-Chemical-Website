@@ -32,6 +32,7 @@ function detectLanguage() {
 function updateIsoCertLinks() {
   const lang = detectLanguage();
   const isoLinks = document.querySelectorAll('.iso-cert-link');
+  const certPath = './assets/certifications/'; // Centralized path configuration
 
   isoLinks.forEach(link => {
     const enFile = link.getAttribute('data-en');
@@ -39,7 +40,7 @@ function updateIsoCertLinks() {
 
     // Set the appropriate file based on language
     const targetFile = lang === 'zh' ? zhFile : enFile;
-    link.setAttribute('href', `./${targetFile}`);
+    link.setAttribute('href', `${certPath}${targetFile}`);
   });
 }
 
