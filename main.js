@@ -44,24 +44,32 @@ function updateIsoCertLinks() {
   });
 }
 
-// Initialize ISO cert links on page load
-document.addEventListener('DOMContentLoaded', updateIsoCertLinks);
+// Initialize all functionality on page load
+document.addEventListener('DOMContentLoaded', () => {
+  // Update ISO certification links
+  updateIsoCertLinks();
 
-// Mobile nav toggle
-const btn = document.getElementById('menuBtn');
-const panel = document.getElementById('mobileNav');
-btn?.addEventListener('click', () => {
-  const expanded = btn.getAttribute('aria-expanded') === 'true' || false;
-  btn.setAttribute('aria-expanded', String(!expanded));
-  panel.classList.toggle('hidden');
+  // Mobile nav toggle
+  const btn = document.getElementById('menuBtn');
+  const panel = document.getElementById('mobileNav');
+  btn?.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true' || false;
+    btn.setAttribute('aria-expanded', String(!expanded));
+    panel.classList.toggle('hidden');
+  });
+
+  // Contact form feedback
+  const form = document.getElementById('contactForm');
+  const note = document.getElementById('formNote');
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    note.textContent = 'Thanks — your request has been noted. Our team will get back shortly.';
+    form.reset();
+  });
+
+  // Footer year
+  const yearElement = document.getElementById('y');
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
 });
-// Contact form feedback
-const form = document.getElementById('contactForm');
-const note = document.getElementById('formNote');
-form?.addEventListener('submit', (e) => {
-  e.preventDefault();
-  note.textContent = 'Thanks — your request has been noted. Our team will get back shortly.';
-  form.reset();
-});
-// Footer year
-document.getElementById('y').textContent = new Date().getFullYear();
