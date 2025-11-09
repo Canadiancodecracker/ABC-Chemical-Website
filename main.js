@@ -49,10 +49,17 @@ function updateIsoCertLinks() {
     // Set the appropriate file based on language
     const targetFile = lang === 'zh' ? zhFile : enFile;
     // Encode only spaces in the filename for proper file path URL
-    // Don't use encodeURIComponent as it over-encodes for file paths
     const encodedFile = targetFile.replace(/ /g, '%20');
     const fullPath = `${certPath}${encodedFile}`;
+
+    // Update the href attribute
     link.setAttribute('href', fullPath);
+
+    // Add click handler to ensure it opens correctly
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.open(fullPath, '_blank', 'noopener,noreferrer');
+    });
   });
 }
 
