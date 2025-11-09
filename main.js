@@ -35,18 +35,14 @@ function updateIsoCertLinks() {
   const certPath = './assets/certifications/'; // Centralized path configuration
 
   if (isoLinks.length === 0) {
-    console.warn('No ISO certification links found on page');
     return;
   }
-
-  console.log(`Updating ${isoLinks.length} ISO certification links for language: ${lang}`);
 
   isoLinks.forEach((link, index) => {
     const enFile = link.getAttribute('data-en');
     const zhFile = link.getAttribute('data-zh');
 
     if (!enFile || !zhFile) {
-      console.error(`ISO link ${index} missing data attributes`);
       return;
     }
 
@@ -56,8 +52,6 @@ function updateIsoCertLinks() {
     const encodedFile = encodeURIComponent(targetFile);
     const fullPath = `${certPath}${encodedFile}`;
     link.setAttribute('href', fullPath);
-
-    console.log(`Link ${index} updated: ${link.textContent.trim()} -> ${fullPath}`);
   });
 }
 
