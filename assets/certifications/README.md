@@ -7,13 +7,13 @@ This folder contains the ISO certification files for ABC Chemical Co., Ltd.
 Please place the following certification files in this directory:
 
 ### English Certifications
-- `ISO 90001(English).png` - ISO 9001 Quality Management System Certificate (English)
-- `ISO 140001(English).png` - ISO 14001 Environmental Management System Certificate (English)
+- `ISO 9001(English).png` - ISO 9001 Quality Management System Certificate (English)
+- `ISO 14001(English).png` - ISO 14001 Environmental Management System Certificate (English)
 - `ISO 45001(English).png` - ISO 45001 Occupational Health & Safety Management System Certificate (English)
 
 ### Chinese Certifications
-- `ISO 90001 (中文).png` - ISO 9001 质量管理体系认证 (中文)
-- `ISO 140001 (中文).png` - ISO 14001 环境管理体系认证 (中文)
+- `ISO 9001 (中文).png` - ISO 9001 质量管理体系认证 (中文)
+- `ISO 14001 (中文).png` - ISO 14001 环境管理体系认证 (中文)
 - `ISO 45001 (中文).png` - ISO 45001 职业健康安全管理体系认证 (中文)
 
 ## File Naming Convention
