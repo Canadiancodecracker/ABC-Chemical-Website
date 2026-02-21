@@ -4,12 +4,13 @@ section[id]{scroll-margin-top:5rem;}
 .glass-product-card{
   position:relative;
   border-radius:1rem;
-  border:1px solid rgba(103, 232, 249, 0.35);
-  background:linear-gradient(145deg, rgba(255,255,255,0.68), rgba(255,255,255,0.35));
+  border:1px solid rgba(147, 197, 253, 0.45);
+  background:#0E3C75;
   backdrop-filter:blur(16px);
   -webkit-backdrop-filter:blur(16px);
-  box-shadow:0 0 0 1px rgba(255,255,255,0.22) inset, 0 0 18px rgba(34, 211, 238, 0.16), 0 20px 30px -24px rgba(15, 23, 42, 0.55);
+  box-shadow:0 0 0 1px rgba(255,255,255,0.18) inset, 0 0 18px rgba(34, 211, 238, 0.16), 0 20px 30px -24px rgba(15, 23, 42, 0.55);
   transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  color:#ffffff;
 }
 
 .glass-product-card::after{
@@ -24,8 +25,14 @@ section[id]{scroll-margin-top:5rem;}
 
 .glass-product-card:hover{
   transform:translateY(-4px);
-  border-color:rgba(34, 211, 238, 0.75);
+  border-color:rgba(125, 211, 252, 0.85);
   box-shadow:0 0 0 1px rgba(255,255,255,.4) inset, 0 0 26px rgba(34, 211, 238, 0.25), 0 24px 36px -24px rgba(15, 23, 42, 0.65);
+}
+
+.glass-product-card h3,
+.glass-product-card p,
+.glass-product-card a{
+  color:#ffffff;
 }
 
 .glass-product-icon{
@@ -36,13 +43,12 @@ section[id]{scroll-margin-top:5rem;}
 }
 
 .glass-cta{
-  color:#0e3c75;
-  border:1px solid rgba(56, 189, 248, 0.5);
-  background:rgba(240, 249, 255, 0.66);
+  border:1px solid rgba(191, 219, 254, 0.7);
+  background:rgba(255, 255, 255, 0.12);
   backdrop-filter:blur(8px);
 }
 
 .glass-cta:hover{
-  background:rgba(224, 242, 254, 0.8);
+  background:rgba(255, 255, 255, 0.2);
   box-shadow:0 0 14px rgba(56, 189, 248, 0.3);
 }
