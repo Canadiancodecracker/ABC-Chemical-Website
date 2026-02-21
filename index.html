@@ -124,40 +124,52 @@
       </section>
 
       <!-- Products -->
-      <section id="products" class="py-16 sm:py-20">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section id="products" class="py-16 sm:py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-brand-blue/95 to-slate-900"></div>
+        <div class="absolute inset-0 opacity-35" style="background-image: radial-gradient(circle at 15% 20%, rgba(34,211,238,0.45), transparent 30%), radial-gradient(circle at 80% 10%, rgba(14,165,233,0.28), transparent 32%), radial-gradient(circle at 50% 80%, rgba(56,189,248,0.2), transparent 38%);"></div>
+        <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="mb-10">
-            <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Product Lines</h2>
-            <p class="mt-2 text-gray-700 max-w-2xl">Quality‑driven products engineered for performance, consistency, and safety across critical industries.</p>
+            <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-white">Product Lines</h2>
+            <p class="mt-2 text-slate-100/90 max-w-2xl">Quality‑driven products engineered for performance, consistency, and safety across critical industries.</p>
           </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <article class="group bg-white rounded-lg border border-gray-200 shadow-md hover:shadow-xl transition transform hover:-translate-y-1 p-6 flex flex-col gap-4">
-              <div class="h-10 w-10 rounded-md bg-brand-blue/10 flex items-center justify-center">
-                <svg class="h-6 w-6 text-brand-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.3 7L12 12l8.7-5"/></svg>
+          <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-6">
+            <article class="glass-product-card group p-6 flex flex-col gap-5">
+              <div class="glass-product-icon h-12 w-12 rounded-xl flex items-center justify-center">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.3 7L12 12l8.7-5"/></svg>
               </div>
-              <h3 class="text-lg font-semibold">Calcium Carbide</h3>
-              <p class="text-sm text-gray-600">High‑purity feedstock supporting acetylene generation and downstream specialty syntheses.</p>
+              <h3 class="text-lg font-semibold text-slate-950">Calcium Carbide</h3>
+              <p class="text-sm text-slate-800">High‑purity feedstock supporting acetylene generation and downstream specialty syntheses.</p>
+              <a href="#resources" class="glass-cta mt-auto inline-flex items-center justify-between gap-3 rounded-xl px-5 py-3 text-sm font-semibold">View Full Specifications <span aria-hidden="true">›</span></a>
             </article>
-            <article class="group bg-white rounded-lg border border-gray-200 shadow-md hover:shadow-xl transition transform hover:-translate-y-1 p-6 flex flex-col gap-4">
-              <div class="h-10 w-10 rounded-md bg-brand-blue/10 flex items-center justify-center">
-                <svg class="h-6 w-6 text-brand-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l0 0a2 2 0 1 1-2.83 2.83l0 0A1.65 1.65 0 0 0 16 19.4a1.65 1.65 0 0 0-1.82.33l0 0a2 2 0 1 1-2.83-2.83l0 0A1.65 1.65 0 0 0 8.6 16a1.65 1.65 0 0 0-1.82-.33l0 0a2 2 0 1 1-2.83-2.83l0 0A1.65 1.65 0 0 0 4.6 8.6a1.65 1.65 0 0 0-.33-1.82l0 0a2 2 0 1 1 2.83-2.83l0 0A1.65 1.65 0 0 0 8.6 4.6a1.65 1.65 0 0 0 1.82-.33l0 0a2 2 0 1 1 2.83 2.83l0 0A1.65 1.65 0 0 0 16 8.6a1.65 1.65 0 0 0 1.82.33l0 0a2 2 0 1 1 2.83 2.83l0 0A1.65 1.65 0 0 0 19.4 15z"/></svg>
+            <article class="glass-product-card group p-6 flex flex-col gap-5">
+              <div class="glass-product-icon h-12 w-12 rounded-xl flex items-center justify-center">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
               </div>
-              <h3 class="text-lg font-semibold">Cyanamide Derivatives</h3>
-              <p class="text-sm text-gray-600">Cyanamide & Dicyandiamide for controlled reactivity and high‑performance curing systems.</p>
+              <h3 class="text-lg font-semibold text-slate-950">Calcium Cyanamide</h3>
+              <p class="text-sm text-slate-800">A multifunctional agrochemical and chemical intermediate, enabling soil improvement, nitrogen fertilization, and specialty NCN syntheses.</p>
+              <a href="#resources" class="glass-cta mt-auto inline-flex items-center justify-between gap-3 rounded-xl px-5 py-3 text-sm font-semibold">View Full Specifications <span aria-hidden="true">›</span></a>
             </article>
-            <article class="group bg-white rounded-lg border border-gray-200 shadow-md hover:shadow-xl transition transform hover:-translate-y-1 p-6 flex flex-col gap-4">
-              <div class="h-10 w-10 rounded-md bg-brand-blue/10 flex items-center justify-center">
-                <svg class="h-6 w-6 text-brand-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            <article class="glass-product-card group p-6 flex flex-col gap-5">
+              <div class="glass-product-icon h-12 w-12 rounded-xl flex items-center justify-center">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l0 0a2 2 0 1 1-2.83 2.83l0 0A1.65 1.65 0 0 0 16 19.4a1.65 1.65 0 0 0-1.82.33l0 0a2 2 0 1 1-2.83-2.83l0 0A1.65 1.65 0 0 0 8.6 16a1.65 1.65 0 0 0-1.82-.33l0 0a2 2 0 1 1-2.83-2.83l0 0A1.65 1.65 0 0 0 4.6 8.6a1.65 1.65 0 0 0-.33-1.82l0 0a2 2 0 1 1 2.83-2.83l0 0A1.65 1.65 0 0 0 8.6 4.6a1.65 1.65 0 0 0 1.82-.33l0 0a2 2 0 1 1 2.83 2.83l0 0A1.65 1.65 0 0 0 16 8.6a1.65 1.65 0 0 0 1.82.33l0 0a2 2 0 1 1 2.83 2.83l0 0A1.65 1.65 0 0 0 19.4 15z"/></svg>
               </div>
-              <h3 class="text-lg font-semibold">Performance Products</h3>
-              <p class="text-sm text-gray-600">Creatine Monohydrate & Guanidinoacetic Acid for nutrition and functional performance.</p>
+              <h3 class="text-lg font-semibold text-slate-950">Cyanamide Derivatives</h3>
+              <p class="text-sm text-slate-800">Cyanamide & Dicyandiamide for controlled reactivity and high‑performance curing systems.</p>
+              <a href="#resources" class="glass-cta mt-auto inline-flex items-center justify-between gap-3 rounded-xl px-5 py-3 text-sm font-semibold">View Full Specifications <span aria-hidden="true">›</span></a>
             </article>
-            <article class="group bg-white rounded-lg border border-gray-200 shadow-md hover:shadow-xl transition transform hover:-translate-y-1 p-6 flex flex-col gap-4">
-              <div class="h-10 w-10 rounded-md bg-brand-blue/10 flex items-center justify-center">
-                <svg class="h-6 w-6 text-brand-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v2a3 3 0 0 1-.88 2.12L4 11.24V14a6 6 0 0 0 6 6h4a6 6 0 0 0 6-6v-2.76l-4.12-4.12A3 3 0 0 1 15 5V3"/></svg>
+            <article class="glass-product-card group p-6 flex flex-col gap-5">
+              <div class="glass-product-icon h-12 w-12 rounded-xl flex items-center justify-center">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
               </div>
-              <h3 class="text-lg font-semibold">Industrial Intermediates</h3>
-              <p class="text-sm text-gray-600">Thiourea & Guanidine Nitrate as dependable intermediates for advanced syntheses.</p>
+              <h3 class="text-lg font-semibold text-slate-950">Performance Products</h3>
+              <p class="text-sm text-slate-800">Creatine Monohydrate & Guanidinoacetic Acid for nutrition and functional performance.</p>
+            </article>
+            <article class="glass-product-card group p-6 flex flex-col gap-5">
+              <div class="glass-product-icon h-12 w-12 rounded-xl flex items-center justify-center">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v2a3 3 0 0 1-.88 2.12L4 11.24V14a6 6 0 0 0 6 6h4a6 6 0 0 0 6-6v-2.76l-4.12-4.12A3 3 0 0 1 15 5V3"/></svg>
+              </div>
+              <h3 class="text-lg font-semibold text-slate-950">Industrial Intermediates</h3>
+              <p class="text-sm text-slate-800">Thiourea & Guanidine Nitrate as dependable intermediates for advanced syntheses.</p>
             </article>
           </div>
         </div>
